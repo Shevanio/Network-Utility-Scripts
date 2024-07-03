@@ -4,9 +4,9 @@ Welcome to the **Network Utility Scripts** repository! This collection of script
 
 ## Scripts Included
 
-### 1. hostScan.sh
+### 1. red/hostScan.sh
 
-`hostScan.sh` is a powerful script that scans the current network to display active hosts and their open ports. It checks for the following ports: 21, 22, 23, 25, 80, 139, 443, 455, and 8080.
+`hostScan.sh` Is a powerful script that scans the current network to display active hosts and their open ports. It checks for the following ports: 21, 22, 23, 25, 80, 139, 443, 455, and 8080.
 
 #### Usage
 
@@ -19,9 +19,9 @@ Welcome to the **Network Utility Scripts** repository! This collection of script
 - **Network Scan**: Identifies all active hosts in the current network.
 - **Port Scan**: Lists active ports for each detected host.
 
-### 2. portScan.sh
+### 2. /red/portScan.sh
 
-`portScan.sh` focuses on a single target IP, showing you the open ports on that IP. This is especially useful for detailed port analysis of specific devices.
+`portScan.sh` Focuses on a single target IP, showing you the open ports on that IP. This is especially useful for detailed port analysis of specific devices.
 
 #### Usage
 
@@ -32,6 +32,26 @@ Welcome to the **Network Utility Scripts** repository! This collection of script
 #### Features
 
 - **Targeted Scan**: Provides a list of open ports for a specified IP address.
+
+### 3. domain/subDomainSearcher.py
+
+`subDomainSearcher.py` Searches and lists subdomains for a target domain.
+
+#### Usage
+
+```bash
+./subDomainSearcher.py [-h] -d DOMAIN [-o OUTPUT]
+
+options:
+    -h, --help                      Show this help message and exit.
+    -d DOMAIN, --domain DOMAIN      Target domain.
+    -o OUTPUT, --output OUTPUT      Output file.
+```
+
+#### Features
+
+- **Targeted Scan**: Provides a list of open ports for a specified IP address.
+
 
 ## Getting Started
 
@@ -45,11 +65,14 @@ chmod +x hostScan.sh portScan.sh
 
 ## Contributing
 
-We welcome contributions! If you have ideas for new scripts or improvements to existing ones, feel free to fork the repository and submit a pull request.
+I apreciate any contributions! If you have ideas for new scripts or improvements to existing ones, feel free to fork the repository and submit a pull request.
 
 ## Acknowledgments
 
-These scripts are created and maintained by **Shevanio**. Special thanks to all contributors and users who help improve and expand this project.
+These scripts are created and maintained by **Shevanio**. Special thanks to: 
+
+@s4vitar
+@UnaPibaGeek
 
 ## License
 
