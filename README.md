@@ -63,7 +63,7 @@ options:
 
 options:
     -h, --help                                               Show this help message and exit.
-    -d DOMAIN, --domain DOMAIN                               Domain name to enumerate it's subdomains. Required=True
+    -d DOMAIN, --domain DOMAIN                               Domain name to enumerate it\'s subdomains. Required=True
     -b, --bruteforce                                         Enable the subbrute bruteforce module. Default=False
     -p PORT1,PORT2, --ports PORT1,PORT2                      Scan the found subdomains against specified tcp ports
     -v, --verbose                                            Enable Verbosity and display results in realtime. Default=False
