@@ -15,6 +15,7 @@ Original version: https://github.com/aboul3la/Sublist3r
 
 ```
 git clone https://github.com/shevanio/Network-Utility-Scripts.git
+cd Network-Utility-Scripts/domain/Sublist3r
 ```
 
 ## Recommended Python Version:
