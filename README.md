@@ -33,7 +33,7 @@ Welcome to the **Network Utility Scripts** repository! This collection of script
 
 - **Targeted Scan**: Provides a list of open ports for a specified IP address.
 
-### 3. domain/subDomainSearcher.py
+### 3. /domain/subDomainSearcher.py
 
 `subDomainSearcher.py` Searches and lists subdomains for a target domain.
 
@@ -52,7 +52,7 @@ options:
 
 - **Targeted Scan**: Provides a list of open ports for a specified IP address.
 
-### 4. domain/Sublist3r/sublist3r.py
+### 4. /domain/Sublist3r/sublist3r.py
 
 `sublist3r.py` Designed to enumerate subdomains of websites using OSINT
 
