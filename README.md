@@ -52,6 +52,40 @@ options:
 
 - **Targeted Scan**: Provides a list of open ports for a specified IP address.
 
+### 4. domain/Sublist3r/sublist3r.py
+
+`sublist3r.py` Designed to enumerate subdomains of websites using OSINT
+
+#### Usage
+
+```bash
+./sublist3r.py [-h] 
+
+options:
+    -h, --help                                               Show this help message and exit.
+    -d DOMAIN, --domain DOMAIN                               Domain name to enumerate it's subdomains. Required=True
+    -b, --bruteforce                                         Enable the subbrute bruteforce module. Default=False
+    -p PORT1,PORT2, --ports PORT1,PORT2                      Scan the found subdomains against specified tcp ports
+    -v, --verbose                                            Enable Verbosity and display results in realtime. Default=False
+    -s, --silent                                             Disable Verbosity and run the script silently. Default=False
+    -t THREADS, --threads THREADS                            Number of threads to use for subbrute bruteforce. Type=int. Default=30
+    -e SEARCHENGINES, --engines SEARCHENGINES                Specify a comma-separated list of search engines
+    -o OUTPUT, --output OUTPUT                               Save the results to text file
+    -vt <your-apikey>, --virustotal_apikey <your-apikey>     Set Virustotal API Key.
+    -n, --no-color                                           Output without color. Default=False
+```
+
+#### Example
+```bash
+python sublist3r.py -d google.com -b -p 80,443 -v -o subdomains.txt
+```
+
+#### Features
+- **Subdomain Enumeration**: Gathers subdomains using multiple search engines and services.
+- **Bruteforce Module**: Uses subbrute to perform a brute force attack for discovering more subdomains.
+- **Port Scanning**: Scans discovered subdomains for open ports.
+- **Real-time Results**: Displays results in real-time when verbosity is enabled.
+- **Silent Mode**: Runs the script silently without output.
 
 ## Getting Started
 
@@ -73,6 +107,7 @@ These scripts are created and maintained by **Shevanio**. Special thanks to:
 
 @s4vitar
 @UnaPibaGeek
+@aboul3la
 
 ## License
 
